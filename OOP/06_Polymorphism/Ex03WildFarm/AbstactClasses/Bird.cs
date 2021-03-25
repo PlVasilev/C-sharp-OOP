@@ -1,0 +1,16 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace Ex03WildFarm.AbstactClasses
+{
+    public abstract class Bird : Animal
+    {
+        public double WingSize { get; set; }
+
+        public Bird(string name, double weight, double wingSize) : base(name, weight)
+        {
+            WingSize = wingSize;
+        }
+    }
+}
